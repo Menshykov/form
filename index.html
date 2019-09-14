@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="ajax-contact-form" method="POST" enctype="multipart/form-data">
+        <h3>Отправить файл</h3>
+        <div>
+            <label for="id">e-mail</label>
+            <input id="mail" type="email" required>
+        </div>
+        <div>
+            <label for="client_file_order">Файл</label>
+            <input name="uploaded_file" id="client_file_order" type="file" multiple="">
+        </div>
+        <button name="submit" type="submit" onclick="order_form(); return false;">Отправить</button>
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
